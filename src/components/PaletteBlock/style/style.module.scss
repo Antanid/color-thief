@@ -2,6 +2,15 @@
 background-color: black;
 min-height: 200px;
   .pallete_ul{
+    padding-bottom: 100px;
+    p{
+        background-color: black;
+        color: white;
+        text-align: center;
+        margin: 0;  
+        padding-left: 20px;
+    }
+   
    ul{
     display: flex;
     flex-wrap: wrap;

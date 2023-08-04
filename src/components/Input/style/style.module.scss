@@ -9,8 +9,10 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    .inpul_label{   
+    .inpul_label{ 
+        background-color: #2a2a2a;  
     label{
+        background-color: #2a2a2a;  
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -24,6 +26,7 @@
             border: 1px solid rgb(255, 254, 254);
         }
         img{
+            background-color: #2a2a2a;  
             width: 32px;
         }
     }

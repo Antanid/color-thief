@@ -25,11 +25,14 @@ const PalettePage = () => {
     }
   return (
     <div>
-      <PaletteBlock 
-      copie={copie}
-      onCopieText={onCopieText}
-      img={img}
-      />
+      {img && 
+       <PaletteBlock 
+       copie={copie}
+       onCopieText={onCopieText}
+       img={img}
+       />
+      }
+     
     </div>
   );
 };
