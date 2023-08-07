@@ -8,7 +8,8 @@ type PalleteType = {
   copie: string;
 };
 
-const PaletteBlock: React.FC<PalleteType> = ({ img, onCopieText, copie }) => {
+const PaletteBlock: React.FC<PalleteType> = ({ img, onCopieText, copie}) => {
+
   return (
     <div className={style.main_palette}>
        
@@ -28,7 +29,7 @@ const PaletteBlock: React.FC<PalleteType> = ({ img, onCopieText, copie }) => {
           );
         }}
       </Color>
-      <Palette src={img} crossOrigin="anonymous" format="hex" colorCount={10}>
+      <Palette src={img} crossOrigin="anonymous" format="hex" colorCount={20}>
         {({ data, loading }) => {
           if (loading) return <h1>Loading</h1>;
           return (

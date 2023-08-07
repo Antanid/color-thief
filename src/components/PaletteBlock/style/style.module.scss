@@ -1,59 +1,64 @@
-.main_palette{
-background-color: black;
-min-height: 200px;
-  .pallete_ul{
-    padding-bottom: 100px;
-    p{
+.parent_div{
+    min-height: 200px;
+    background-color: black;
+    .main_palette{
         background-color: black;
-        color: white;
-        text-align: center;
-        margin: 0;  
-        padding-left: 20px;
-    }
-   
-   ul{
-    display: flex;
-    flex-wrap: wrap;
-justify-content: center;
-    margin: 0 20px;
-    li{
-        list-style-type: none;
-       margin-left: 10px;
-        margin-top: 10px;
-        height: 230px;
-        width: 200px;
-        position: relative;
-        span{
-            cursor: pointer;
-            height: 35px;
-            width: 100%;
-            position: absolute;
-            bottom: 0;
-            border-top: 2px solid #ffffff2f;
-            border-bottom-right-radius: 0.4rem;
-            border-bottom-left-radius: 0.4rem;
-          
+          .pallete_ul{
+            padding-bottom: 100px;
+            p{
+                background-color: black;
+                color: white;
+                text-align: center;
+                margin: 0;  
+                padding-left: 20px;
+            }
+           
+           ul{
             display: flex;
-            align-items: center;
-            justify-content: center;
-          
-            font-weight: 600;
-            color: #0a0a0a;
-            background-color: rgba(255, 255, 255, 0.40);
+            flex-wrap: wrap;
+        justify-content: center;
+            margin: 0 20px;
+            li{
+                list-style-type: none;
+               margin-left: 10px;
+                margin-top: 10px;
+                height: 230px;
+                width: 200px;
+                position: relative;
+                span{
+                    cursor: pointer;
+                    height: 35px;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    border-top: 2px solid #ffffff2f;
+                    border-bottom-right-radius: 0.4rem;
+                    border-bottom-left-radius: 0.4rem;
+                  
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  
+                    font-weight: 600;
+                    color: #0a0a0a;
+                    background-color: rgba(255, 255, 255, 0.40);
+                }
+                &:hover{
+                    transform: translateY(-5px);
+                    transition: 0.2s all ease-out;
+                }
+            }
+           }
+          }
         }
-        &:hover{
-            transform: translateY(-5px);
-            transition: 0.2s all ease-out;
-        }
-    }
-   }
-  }
 }
+
 @media (max-width: 500px) {
     *{
         margin: 0;
         padding: 0;
     }
+    .parent_div{
     .main_palette{
         margin: 0;
         padding: 0;
@@ -67,4 +72,5 @@ justify-content: center;
             }
         }
     }
+}
 }
